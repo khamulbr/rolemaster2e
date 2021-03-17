@@ -18,31 +18,78 @@
     "character": {
       "templates": ["base"],
       "biography": "",
-      "attributes": {
+      "traits": {
+        "name" : "",
+        "race": {},
+        "height": 0,
+        "weight": 0,
+        "hair": "",
+        "eyes": "",
+        "age": 0,
+        "gender": "",
+        "appearance": 0,
+        "demeanor": 0,
+        "special": {},
+        "profession": {},
         "level": {
           "value": 1
+        },
+        "experience_points": 0
+      },
+      "stats": {
+        "Constitution": {
+          "abbr": "CO",
+          "value": 50
+        },
+        "Agility": {
+          "abbr": "AG",
+          "value": 50
+        },
+        "Self-Discipline": {
+          "abbr": "SD",
+          "value": 50
+        },
+        "Memory": {
+          "abbr": "ME",
+          "value": 50
+        },
+        "Reasoning": {
+          "abbr": "RE",
+          "value": 50
+        },
+        "Strength": {
+          "abbr": "CO",
+          "value": 50
+        },
+        "Quickness": {
+          "abbr": "QU",
+          "value": 50
+        },
+        "Presence": {
+          "abbr": "PR",
+          "value": 50
+        },
+        "Empathy": {
+          "abbr": "EM",
+          "value": 50
+        },
+        "Intuition": {
+          "abbr": "IN",
+          "value": 50
         }
       },
-      "abilities": {
-        "str": {
-          "value": 10
-        },
-        "dex": {
-          "value": 10
-        },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
-        }
-      }
+      "base_hits": 0,
+      "total_hits": 0,
+      "armor_type": 0,
+      "defensive_bonus": 0,
+      "shield_bonus": 0,
+      "realm": "",
+      "power_points": 0,
+      "maximum_pace": 0,
+      "base_movement_rate": 0,
+      "skills": { },
+      "spells": { },
+      "languages": { }
     }
   },
   "Item": {
@@ -61,7 +108,7 @@
       "templates": ["base"]
     },
     "spell": {
-      "templates": ["base"],
+      "templates": ["base", "profession"],
       "spellLevel": 1
     }
   }

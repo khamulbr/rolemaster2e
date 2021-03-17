@@ -22,8 +22,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/khamulbr/rolemaster2e",
+  "manifest": "https://raw.githubusercontent.com/khamulbr/rolemaster2e/master/system.json",
+  "download": "https://github.com/khamulbr/rolemaster2e/archive/master.zip",
   "license": "LICENSE.txt"
 }
