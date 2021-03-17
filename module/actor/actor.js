@@ -28,10 +28,58 @@ export class Rolemaster2EActor extends Actor {
     // Make modifications to data here. For example:
 
     // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(data.abilities)) {
+    for (let [key, stat] of Object.entries(data.stats)) {
       // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
+      stat.normal_bonus = this._getNormalBonus(stat.value);
     }
+  }
+
+  _getNormalBonus(value) {
+    let normalBonus = 0;
+
+    switch(true) {
+      case (value === 1):
+        normalBonus = -25;
+        break;
+      case (value === 2):
+        normalBonus = -20;
+        break;
+      case (value <= 4):
+        normalBonus = -15;
+        break;
+      case (value <= 9):
+        normalBonus = -10;
+        break;
+      case (value <= 24):
+        normalBonus = -15;
+        break;
+      case (value <= 74):
+        normalBonus = 0;
+        break;
+      case (value <= 89):
+        normalBonus = 5;
+        break;
+      case (value <= 94):
+        normalBonus = 10;
+        break;        
+      case (value <= 97):
+        normalBonus = 15;
+        break;
+      case (value <= 99):
+        normalBonus = 20;
+        break;          
+      case (value <= 100):
+        normalBonus = 25;
+        break;                
+      case (value <= 101):
+        normalBonus = 30;
+        break;
+      case (value <= 102):
+        normalBonus = 35;
+        break;                  
+    }
+
+    return normalBonus;
   }
 
 }
