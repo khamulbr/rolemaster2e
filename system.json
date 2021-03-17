@@ -6,7 +6,7 @@
   "minimumCoreVersion": "0.7.5",
   "compatibleCoreVersion": "0.7.9",
   "templateVersion": 2,
-  "author": "John Doe",
+  "author": "Alessandro \"Khamûl\" Dias",
   "esmodules": ["module/rolemaster2e.js"],
   "styles": ["css/rolemaster2e.css"],
   "scripts": [],
