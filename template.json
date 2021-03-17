@@ -1,22 +1,7 @@
 {
   "Actor": {
     "types": ["character"],
-    "templates": {
-      "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
-        },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
-        }
-      }
-    },
     "character": {
-      "templates": ["base"],
       "biography": "",
       "traits": {
         "name" : "",
@@ -108,7 +93,7 @@
       "templates": ["base"]
     },
     "spell": {
-      "templates": ["base", "profession"],
+      "templates": ["base"],
       "spellLevel": 1
     }
   }
